@@ -1,0 +1,82 @@
+.eMBOzo.active {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.eMBOzo {
+    position: absolute;
+    inset: 0px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    height: 100vh;
+    z-index: 11;
+    transform: translate3d(0px, -100vh, 0px);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s ease-in-out;
+}
+
+.dXXwjD.active {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.dXXwjD {
+    position: absolute;
+    inset: 0px;
+    width: 100vw;
+    background-image: url(https://web-images.credcdn.in/v2/_next/assets/images/launch-banners/money/spotlight-dropdown-desktop.png?tr=q-95);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+    object-fit: cover;
+    transform: translate3d(0px, -100vh, 0px);
+    transition: transform 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.eQPvhU {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hNPQwt {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(13, 13, 13);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 26px 32px;
+    width: fit-content;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.jpRlrZ {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: gilroy-medium;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.ggybSB {
+    margin-left: 14px;
+}
