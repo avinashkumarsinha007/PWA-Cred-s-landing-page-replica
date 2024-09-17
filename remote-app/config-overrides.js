@@ -22,8 +22,11 @@ module.exports = function override(config, env) {
       filename: "remoteEntry.js",
       exposes: {
         "./Header": "./src/Components/Header",
-        // "./Cart": "./src/Components/Cart",
-        // "./ProductList": "./src/Components/ProductList",
+        "./HeroBanner": "./src/Components/HeroBanner/HeroBanner",
+        "./ScrollingText": "./src/Components/ScrollingText/ScrollingText",
+        "./MobileTransition": "./src/Components/MobileTransition/MobileTransition",
+        "./SpinningCards": "./src/Components/SpinningCards/SpinningCards",
+        "./Footer": "./src/Components/Footer/Footer",
       },
       shared: {
         react: { singleton: true, eager: true, requiredVersion: "^18.3.1" },
