@@ -46,6 +46,34 @@ registerRoute(
   createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
 );
 
+// Cache assets from the remote app
+registerRoute(
+  ({ url }) => url.origin === 'http://localhost:3001',
+  new StaleWhileRevalidate({
+    cacheName: 'remote-microfrontend-assets',
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 50,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  })
+);
+
+// Cache the remote app's entry point
+registerRoute(
+  ({ url }) => url.pathname === '/remoteEntry.js',
+  new StaleWhileRevalidate({
+    cacheName: 'remote-entry-point',
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 1,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  })
+);
+
 // An example runtime caching route for requests that aren't handled by the
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
@@ -57,6 +85,20 @@ registerRoute(
       // Ensure that once this runtime cache reaches a maximum size the
       // least-recently used images are removed.
       new ExpirationPlugin({ maxEntries: 50 }),
+    ],
+  })
+);
+
+// Cache other remote app resources
+registerRoute(
+  ({ url }) => url.origin === 'http://localhost:3001' && /\.(?:png|jpg|jpeg|svg|css|js)$/.test(url.pathname),
+  new StaleWhileRevalidate({
+    cacheName: 'remote-app-assets',
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 100,
+        maxAgeSeconds: 60 * 24 * 60 * 60,
+      }),
     ],
   })
 );
