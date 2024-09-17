@@ -4,12 +4,12 @@ require("./SpinningCards.css");
 const SpinningCards = () => {
   return (
     <>
-      <div class="sc-1ib0uz9-0 cosEGF">
+      <div className="sc-1ib0uz9-0 cosEGF">
         <section
           style={{height:"60vh",minHeight:"auto"}}
-          class="sc-ddh18-2 sc-994i1z-0 gWQImb jmmmUm"
+          className="sc-ddh18-2 sc-994i1z-0 gWQImb jmmmUm"
         >
-          <div class="sc-994i1z-1 iAakQG">
+          <div className="sc-994i1z-1 iAakQG">
             <video
               loop
               muted
@@ -24,25 +24,25 @@ const SpinningCards = () => {
             ></video>
           </div>
         </section>
-        <div class="sc-1ib0uz9-6 dtNOvS">
-          <div class="sc-1ib0uz9-1 bUKvbb">
-            <div class="sc-1ib0uz9-2 eHbNyV" data-testid="heading-text">
+        <div className="sc-1ib0uz9-6 dtNOvS">
+          <div className="sc-1ib0uz9-1 bUKvbb">
+            <div className="sc-1ib0uz9-2 eHbNyV" data-testid="heading-text">
               do more with
               <br />
               your credit cards
             </div>
-            <div class="sc-1ib0uz9-3 iNRstN">
+            <div className="sc-1ib0uz9-3 iNRstN">
               do more with
               <br />
               your credit cards
             </div>
-            <div class="sc-1ib0uz9-4 cTtPfW" data-testid="description-text">
+            <div className="sc-1ib0uz9-4 cTtPfW" data-testid="description-text">
               manage your credit cards better and improve your credit score:{" "}
               <br /> receive payment reminders, uncover hidden fees, get
               spending
               <br /> insights, and discover ways to maximize card benefits.
             </div>
-            <div class="sc-1ib0uz9-5 jSEgsE">
+            <div className="sc-1ib0uz9-5 jSEgsE">
               manage your credit cards better and improve your credit score:
               receive payment reminders, uncover hidden fees, get spending
               insights, and discover ways to maximize card benefits.
