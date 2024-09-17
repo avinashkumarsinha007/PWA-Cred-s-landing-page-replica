@@ -72,7 +72,7 @@
 }
 
 .jQeqPx {
-    font-family: denton;
+    font-family: denton-bold;
     font-size: 113px;
     font-weight: 700;
     line-height: 101px;
@@ -82,7 +82,7 @@
 }
 
 .fNNTt {
-    font-family: denton;
+    font-family: denton-bold;
     font-size: 52px;
     font-weight: 700;
     line-height: 48px;
@@ -97,7 +97,7 @@
 }
 
 .cfbgIi {
-    font-family: gilroy;
+    font-family: gilroy-regular;
     font-size: 22px;
     font-weight: 500;
     line-height: 39px;
@@ -116,7 +116,7 @@
     font-weight: 500;
     line-height: 22px;
     color: rgba(255, 255, 255, 0.7);
-    font-family: gilroy;
+    font-family: gilroy-regular;
     letter-spacing: 0.2px;
     text-align: center;
     display: none;

@@ -76,7 +76,7 @@
 }
 
 .eHbNyV {
-    font-family: denton;
+    font-family: denton-bold;
     font-size: 90px;
     font-weight: 700;
     width: 100%;
@@ -88,7 +88,7 @@
 
 .iNRstN {
     width: 100%;
-    font-family: denton;
+    font-family: denton-bold;
     font-size: 52px;
     font-weight: 700;
     line-height: 52px;
@@ -105,7 +105,7 @@
 
 .cTtPfW {
     width: 100%;
-    font-family: gilroy;
+    font-family: gilroy-regular;
     font-size: 22px;
     font-weight: 500;
     line-height: 39px;
@@ -116,7 +116,7 @@
 }
 
 .jSEgsE {
-    font-family: gilroy;
+    font-family: gilroy-regular;
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
