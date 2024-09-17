@@ -26,7 +26,8 @@ const MobileTransition = () => {
             {!triggered ? (
               <img
                 src="https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/phone-ticker-desktop-poster-final.jpg?tr=q-95"
-                class="sc-1ck9s4i-1 eZdgcP"
+                  class="sc-1ck9s4i-1 eZdgcP"
+                   data-testid="poster-image"
               />
             ) : null}
               <video
@@ -38,6 +39,7 @@ const MobileTransition = () => {
                 style={{ position: "initial", visibility: triggered? "visible" :"hidden" }}
                 src="https://web-images.credcdn.in/v2/_next/assets/videos/landing/desktop/phone-ticker-desktop-final.mp4?tr=q-95"
                 class="sc-1ck9s4i-0 iaATcO"
+                data-testid="video-element"
               ></video>
           </div>
             </Waypoint>
