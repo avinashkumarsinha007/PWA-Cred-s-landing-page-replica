@@ -145,10 +145,10 @@ const Header = () => {
           ) : null}
 
           {toggleDropDown ? (
-            <div onClick={handleToggleDropdown} class="sc-1tidt5-9 kkPlId">
+            <div onClick={handleToggleDropdown} className="sc-1tidt5-9 kkPlId">
               <img
                 src="https://web-images.credcdn.in/v2/_next/assets/images/navbar/cross-btn.png"
-                class="sc-1tidt5-10 ggkUoP"
+                className="sc-1tidt5-10 ggkUoP"
               />
             </div>
           ) : null}
