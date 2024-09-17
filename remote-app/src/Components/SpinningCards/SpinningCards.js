@@ -19,13 +19,14 @@ const SpinningCards = () => {
               poster="https://web-images.credcdn.in/v2/_next/assets/images/landing/desktop/ccbp-fold-poster.jpg?tr=q-95"
                           style={{ position: "initial", visibility: "visible" }}
               src="https://web-images.credcdn.in/v2/_next/assets/videos/landing/desktop/ccbp-fold-d.mp4?tr=q-95"
-              class="sc-1ck9s4i-0 iaATcO"
+              className="sc-1ck9s4i-0 iaATcO"
+              data-testid="video-element"
             ></video>
           </div>
         </section>
         <div class="sc-1ib0uz9-6 dtNOvS">
           <div class="sc-1ib0uz9-1 bUKvbb">
-            <div class="sc-1ib0uz9-2 eHbNyV">
+            <div class="sc-1ib0uz9-2 eHbNyV" data-testid="heading-text">
               do more with
               <br />
               your credit cards
@@ -35,7 +36,7 @@ const SpinningCards = () => {
               <br />
               your credit cards
             </div>
-            <div class="sc-1ib0uz9-4 cTtPfW">
+            <div class="sc-1ib0uz9-4 cTtPfW" data-testid="description-text">
               manage your credit cards better and improve your credit score:{" "}
               <br /> receive payment reminders, uncover hidden fees, get
               spending
