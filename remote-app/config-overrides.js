@@ -1,10 +1,21 @@
-// config-overrides.js
-const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
+const { override, babelInclude } = require("customize-cra");
+const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = function override(config, env) {
-  config.output.publicPath = "http://localhost:3001/"; // Adjust if Remote App runs on a different port
+  // Apply babelInclude for the specific packages
+  config = override(
+    babelInclude([
+      path.resolve("./packages/app"),
+      path.resolve("./packages/components"),
+      path.resolve("./packages/utils"),
+    ])
+  )(config, env);
 
+  // Set public path for the remote app
+  config.output.publicPath = "http://localhost:3001/";
+
+  // Add the ModuleFederationPlugin
   config.plugins.push(
     new ModuleFederationPlugin({
       name: "remoteApp",
@@ -15,7 +26,7 @@ module.exports = function override(config, env) {
         // "./ProductList": "./src/Components/ProductList",
       },
       shared: {
-        react: { singleton: true, eager: true, requiredVersion: "^18.3.1" }, // Match Host App's React version
+        react: { singleton: true, eager: true, requiredVersion: "^18.3.1" },
         "react-dom": { singleton: true, eager: true, requiredVersion: "^18.3.1" },
       },
     })
