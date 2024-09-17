@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Header = React.lazy(() => import('remoteApp/Header'));
 const HeroBanner = React.lazy(() => import('remoteApp/HeroBanner'));
