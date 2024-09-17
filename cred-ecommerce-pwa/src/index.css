@@ -31,3 +31,52 @@ body {
 html body{
   background-color: rgb(0, 0, 0);
 }
+
+@font-face {
+  font-family: 'gilroy-regular';
+  src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'denton';
+  src: url('./fonts/Denton Test Regular 400.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'denton-light';
+  src: url('./fonts/Denton\ Test\ Light\ 300.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'denton-bold';
+  src: url('./fonts/Denton\ Test\ Bold\ 700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy-medium';
+  src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy-semibold';
+  src: url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
