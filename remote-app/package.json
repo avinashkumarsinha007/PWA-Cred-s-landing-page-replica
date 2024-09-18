@@ -31,7 +31,9 @@
     "start": "cross-env PORT=3001 craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +56,11 @@
   "devDependencies": {
     "@craco/craco": "^7.1.0",
     "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "cypress": "^13.14.2",
+    "eslint-plugin-cypress": "^3.5.0",
     "react-app-rewired": "^2.2.1",
+    "style-loader": "^4.0.0",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"

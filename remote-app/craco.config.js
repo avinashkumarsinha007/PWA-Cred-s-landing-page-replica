@@ -22,7 +22,7 @@ module.exports = {
           },
         })
           );
-          webpackConfig.output.publicPath = 'http://localhost:3001/';
+      webpackConfig.output.publicPath = 'http://localhost:3001/';
       return webpackConfig;
     },
   },
