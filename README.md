@@ -32,3 +32,25 @@ Key features of this project include:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/pwa-cred-landing-page-replica.git
+
+2. Navigate to the project directory:
+
+   cd pwa-cred-landing-page-replica
+
+3. Install the dependencies:
+   
+   npm install
+
+5. Run the application:
+   
+   npm start
+
+### Running the Application with Docker
+
+1. Build the Docker image:
+ 
+  docker build -t pwa-cred-replica .
+
+2. Build the Docker image:
+
+   docker build -t pwa-cred-replica .
