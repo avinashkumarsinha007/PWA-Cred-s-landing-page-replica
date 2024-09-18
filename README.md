@@ -51,6 +51,6 @@ Key features of this project include:
  
   docker build -t pwa-cred-replica .
 
-2. Build the Docker image:
+2. Run the Docker container:
 
-   docker build -t pwa-cred-replica .
+   docker run -p 3000:3000 pwa-cred-replica
